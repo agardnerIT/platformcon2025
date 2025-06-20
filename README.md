@@ -1,2 +1,4 @@
 # platformcon1
-Repository for PlatformCon 2025
+Proposal to change the readme.
+
+
