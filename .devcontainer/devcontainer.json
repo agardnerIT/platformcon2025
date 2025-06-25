@@ -1,0 +1,31 @@
+{
+    "name": "lab1",
+
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    
+    "hostRequirements": {
+        "cpus": 2
+    },
+    
+    "forwardPorts": [80],
+
+    "portsAttributes": {
+        "80": {
+            "label": "Webserver port",
+            "onAutoForward": "ignore"
+        }
+    },
+
+    "postCreateCommand": "python3 environment_installer.py",
+
+    "secrets": {
+        "NAME": {
+            "description": "Please enter your name (eg. Sally Smith)"
+        },
+        "COLOUR": {
+            "description": "Please enter your favourite colour (eg. blue)"
+        }
+    }
+}
