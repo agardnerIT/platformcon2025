@@ -18,7 +18,7 @@
         }
     },
 
-    "postCreateCommand": "pip install -r requirements.txt && python3 environment_installer.py",
+    "postCreateCommand": "pip install -r requirements.txt --break-system-packages && python3 environment_installer.py",
 
     "secrets": {
         "NAME": {
